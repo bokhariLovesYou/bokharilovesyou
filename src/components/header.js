@@ -1,35 +1,19 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React from "react"
+import React, { Component } from "react"
+import Topbar from "./Topbar"
+import { GlobalHeader, FlexContainer } from "./HeaderComponents"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+class Header extends Component {
+  render() {
+    return (
+      <FlexContainer>
+        <GlobalHeader>
+          <Topbar handle={this.props.handle} />
+        </GlobalHeader>
+      </FlexContainer>
+    )
+  }
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
