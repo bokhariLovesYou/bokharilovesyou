@@ -6,7 +6,7 @@ import "../styles/index.scss"
 
 // Components
 import Header from "./header"
-import Footer from "./footer"
+import Footer from "./Footer"
 import DrawerContents from "./DrawerContents"
 
 const Main = styled.main`
