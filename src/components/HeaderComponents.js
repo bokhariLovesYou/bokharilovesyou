@@ -77,6 +77,7 @@ export const Button = styled.button`
     }
   }
   &.hamburger-wrapper {
+    padding-left: 0;
     @media (min-width: 992px) {
       display: none;
     }
