@@ -174,3 +174,72 @@ h6,
 .command-line-prompt > span[data-prompt]:before {
   content: attr(data-prompt);
 }
+
+body {
+  transition: 0.2s ease;
+  &.dark {
+    transition: 0.2s ease;
+    background-color: #272727;
+    color: rgba(255, 255, 255, 0.9);
+    .geuiCG {
+      background-color: #272727;
+    }
+    .HeaderComponents__Drawer-lmHWHu {
+      background-color: #333333;
+      color: rgba(255, 255, 255, 0.6);
+      .cbCAST,
+      .jqGDpI {
+        color: rgba(255, 255, 255, 0.9);
+      }
+      .childPagesWrapper {
+        .jqGDpI {
+          color: rgba(255, 255, 255, 0.6);
+        }
+      }
+      .cYkJYb {
+        background: rgba(202, 204, 206, 0.6);
+        color: rgb(15, 15, 15);
+      }
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6,
+    .jPLeSi,
+    .pages__PagesWrapper-ceBIbH,
+    svg {
+      color: rgba(255, 255, 255, 0.9);
+      fill: rgba(255, 255, 255, 0.9);
+    }
+    hr {
+      border-color: rgba(255, 255, 255, 0.07);
+    }
+    .jPLeSi {
+      border-color: rgba(255, 255, 255, 0.14);
+    }
+    .jerzWb,
+    .jwTOyJ {
+      color: rgba(255, 255, 255, 0.9);
+      blockquote {
+        background-color: #131313;
+      }
+    }
+    .gatsby-highlight {
+      background-color: #131313;
+    }
+    .HeaderComponents__LabelWrapper-jQISXq,
+    .ListItemElement__ListParent-bFGhd {
+      &:hover {
+        background-color: rgb(71, 76, 80);
+      }
+    }
+  }
+}

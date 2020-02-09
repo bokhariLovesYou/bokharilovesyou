@@ -50,9 +50,10 @@ const ArticleContent = styled.div`
     font-size: 0.9rem;
     color: #dd4a68;
     font-weight: 500;
-    border-left: 4px solid #dd4a68;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+    font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 1.35rem;
     p,
     ul li,
     ol li {
