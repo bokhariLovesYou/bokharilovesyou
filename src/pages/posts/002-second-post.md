@@ -4,7 +4,7 @@ metaTitle: "Description of the post"
 metaDescription: "Description of the post"
 date: 2020-02-02 07:00:00
 author: "John Doe"
-image: "../../images/hero.jpeg"
+image: ""
 tags:
   - Tutorials
 ---

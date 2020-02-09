@@ -61,12 +61,17 @@ const ArticleContent = styled.div`
   }
 `
 
-export class SinglePost extends Component {
+class SinglePost extends Component {
   render() {
     const { data } = this.props
     const post = data.markdownRemark.frontmatter
+    let resolutions = ""
+    console.log(post.image)
+    if (post.image !== null) {
+      resolutions = post.image.childImageSharp.fluid
+    }
     return (
-      <PostWrapperLayout imageSource={post.image.childImageSharp.fluid}>
+      <PostWrapperLayout imageSource={resolutions}>
         <SEO title={post.metaTitle} />
         <Article>
           <TitleWrapper>

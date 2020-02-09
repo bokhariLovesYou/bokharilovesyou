@@ -13,8 +13,6 @@ const ImageWrapper = styled.div`
   .cover-image {
     width: 100%;
     height: 216px;
-    object-fit: cover;
-    object-position: 50% 20%;
     z-index: -1;
     @media (min-width: 992px) {
       height: 240px;
@@ -55,6 +53,10 @@ const ContentWrapper = styled.div`
   }
 `
 
+const NoImageWrapper = styled.div`
+  padding: 5rem 0;
+`
+
 const PostWrapper = styled.div``
 
 export class PostWrapperLayout extends Component {
@@ -64,17 +66,25 @@ export class PostWrapperLayout extends Component {
   }
   render() {
     const { children } = this.props
+    console.log(this.props)
+    const checkImage = () => {
+      if (this.props.imageSource === "") {
+        return <NoImageWrapper />
+      } else {
+        return (
+          <Img
+            className="cover-image"
+            fluid={this.props.imageSource}
+            alt="Robot"
+          />
+        )
+      }
+    }
     return (
       <>
         <PostWrapper>
           <ImageWrapper>
-            <Img
-              className="cover-image"
-              fluid={this.props.imageSource}
-              alt="Robot"
-              objectFit="cover"
-              objectPosition="50% 0%"
-            />
+            {checkImage()}
             <Container>
               <EmojiWrapper>
                 <span role="img" aria-label="Sleeping">

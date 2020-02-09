@@ -4,7 +4,7 @@ import FrameWrapperContents from "./FrameWrapperContents"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "../styles/index.scss"
 import Container from "react-bootstrap/Container"
-import Img from "gatsby-image/withIEPolyfill"
+import Img from "gatsby-image"
 
 const ImageWrapper = styled.div`
   width: 100%;
@@ -13,8 +13,6 @@ const ImageWrapper = styled.div`
   .cover-image {
     width: 100%;
     height: 216px;
-    object-fit: cover;
-    object-position: 50% 20%;
     z-index: -1;
     @media (min-width: 992px) {
       height: 240px;
@@ -70,8 +68,6 @@ export class PageWrapperLayout extends Component {
               className="cover-image"
               fluid={this.props.imageSource}
               alt="Robot"
-              objectFit="cover"
-              objectPosition="50% 0%"
             />
             <Container>
               <EmojiWrapper>
