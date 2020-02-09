@@ -42,6 +42,7 @@ export const Drawer = styled.div`
   pointer-events: none;
   visibility: hidden;
   transform: translateX(-232px);
+  padding-top: 0.25rem;
   &.active {
     visibility: visible;
     pointer-events: all;
