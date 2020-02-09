@@ -13,7 +13,7 @@ export class CategoryChildWrapper extends Component {
   render() {
     return (
       <ChildPagesWrapper className="childPagesWrapper">
-        <LabelWrapper InnerChild>
+        <LabelWrapper InnerChild className="label--wrapper">
           <LabelParent Transparent LessMargin>
             <LabelCategoryChild>
               <svg viewBox="0 0 30 30" className="page">
@@ -26,7 +26,11 @@ export class CategoryChildWrapper extends Component {
           </LabelParent>
           <LabelTitleWrapper>
             <Link to={this.props.destination}>
-              <LabelTitle Light onClick={this.props.handle}>
+              <LabelTitle
+                className="label--title "
+                Light
+                onClick={this.props.handle}
+              >
                 {this.props.title}
               </LabelTitle>
             </Link>

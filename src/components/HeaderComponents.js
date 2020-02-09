@@ -146,6 +146,7 @@ export const NightTogglerChild = styled.div`
   transform: translateX(0px) translateY(0px);
   &.active {
     transform: translateX(12px) translateY(0px);
+    trnasiton: transform 200ms ease-out 0s;
   }
 `
 

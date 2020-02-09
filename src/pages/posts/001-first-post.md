@@ -44,5 +44,13 @@ When the call stack finishes executing the last task and there's nothing left to
 
 ![alt text](https://dreamy-agnesi-0d7576.netlify.com/static/03860dec3cbe614e7f3faf1d69a95e0e/45751/photo-1562102085-e00d01ba2898.jpg "Logo Title Text 1")
 
+Anytime a function gets called, it gets **pushed** onto the call stack, and any functions called within the original function are pushed higher up onto the call stack. When a function is done executing, it gets **popped** off the top of the call stack, and the next function in the stack gets processed.
+
+When the call stack finishes executing the last task and there's nothing left to execute, the program finishes, leaving the call stack empty.
+
 > Blockquotes are very handy in email to emulate reply text.
 > This line is part of the same quote.
+
+## JavaScript Call Stack
+
+The environment in which JavaScript runs provides useful APIs to help it process more than one task at a time.

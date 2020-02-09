@@ -32,7 +32,7 @@ class IndexPage extends React.Component {
     return (
       <PageWrapperLayout imageSource={data.file.childImageSharp.fluid}>
         <SEO title="Home" />
-        <PagesWrapper>
+        <PagesWrapper className="pages--wrapper">
           <h1>
             Hi There!{" "}
             <span role="img" aria-label="wave">

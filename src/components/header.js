@@ -7,7 +7,7 @@ class Header extends Component {
   render() {
     return (
       <FlexContainer>
-        <GlobalHeader>
+        <GlobalHeader className="global--header">
           <Topbar handle={this.props.handle} />
         </GlobalHeader>
       </FlexContainer>

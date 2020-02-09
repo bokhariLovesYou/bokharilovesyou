@@ -179,24 +179,23 @@ body {
   transition: 0.2s ease;
   &.dark {
     transition: 0.2s ease;
-    background-color: #272727;
+    background-color: #2f3437;
     color: rgba(255, 255, 255, 0.9);
-    .geuiCG {
-      background-color: #272727;
+    .global--header {
+      background-color: #2f3437;
     }
-    .HeaderComponents__Drawer-lmHWHu {
-      background-color: #333333;
+    .drawer--contents {
+      background-color: #373c3f;
       color: rgba(255, 255, 255, 0.6);
-      .cbCAST,
-      .jqGDpI {
+      .label--title {
         color: rgba(255, 255, 255, 0.9);
       }
       .childPagesWrapper {
-        .jqGDpI {
+        .label--title {
           color: rgba(255, 255, 255, 0.6);
         }
       }
-      .cYkJYb {
+      .label--parent {
         background: rgba(202, 204, 206, 0.6);
         color: rgb(15, 15, 15);
       }
@@ -213,8 +212,8 @@ body {
     .h4,
     .h5,
     .h6,
-    .jPLeSi,
-    .pages__PagesWrapper-ceBIbH,
+    .list--text,
+    .pages--wrapper,
     svg {
       color: rgba(255, 255, 255, 0.9);
       fill: rgba(255, 255, 255, 0.9);
@@ -222,11 +221,11 @@ body {
     hr {
       border-color: rgba(255, 255, 255, 0.07);
     }
-    .jPLeSi {
+    .list--text {
       border-color: rgba(255, 255, 255, 0.14);
     }
-    .jerzWb,
-    .jwTOyJ {
+    .content--wrapper,
+    .article--content {
       color: rgba(255, 255, 255, 0.9);
       blockquote {
         background-color: #131313;
@@ -235,8 +234,8 @@ body {
     .gatsby-highlight {
       background-color: #131313;
     }
-    .HeaderComponents__LabelWrapper-jQISXq,
-    .ListItemElement__ListParent-bFGhd {
+    .label--wrapper,
+    .list--parent {
       &:hover {
         background-color: rgb(71, 76, 80);
       }

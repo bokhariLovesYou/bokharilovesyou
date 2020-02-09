@@ -57,7 +57,9 @@ const ArticleContent = styled.div`
     p,
     ul li,
     ol li {
-      margin-bottom: 0;
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 `
@@ -80,6 +82,7 @@ class SinglePost extends Component {
             <Date>{post.date}</Date>
           </TitleWrapper>
           <ArticleContent
+            className="article--content"
             dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
           />
         </Article>

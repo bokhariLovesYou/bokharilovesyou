@@ -64,7 +64,7 @@ const ListText = styled.div`
 export class ListItemElement extends Component {
   render() {
     return (
-      <ListParent>
+      <ListParent className="list--parent">
         <Link
           to={this.props.destination}
           ref={this.props.ref}
@@ -81,7 +81,7 @@ export class ListItemElement extends Component {
             </ListIconWrap>
             <ListTextWrap>
               <ListTextParent>
-                <ListText>{this.props.title}</ListText>
+                <ListText className="list--text">{this.props.title}</ListText>
               </ListTextParent>
             </ListTextWrap>
           </ListItem>

@@ -23,15 +23,15 @@ class DrawerContents extends Component {
   render() {
     return (
       <div>
-        <Drawer className={this.props.hamBurgerState}>
+        <Drawer className={"drawer--contents " + this.props.hamBurgerState}>
           <LabelGrandWrapper>
-            <LabelWrapper>
-              <LabelParent>
+            <LabelWrapper className="label--wrapper">
+              <LabelParent className="label--parent">
                 <LabelChild>P</LabelChild>
               </LabelParent>
               <Link to="/">
                 <LabelTitleWrapper onClick={this.props.closeDrawer}>
-                  <LabelTitle>Paras</LabelTitle>
+                  <LabelTitle className="label--title ">Paras</LabelTitle>
                 </LabelTitleWrapper>
               </Link>
               <Button
@@ -47,7 +47,7 @@ class DrawerContents extends Component {
             </LabelWrapper>
           </LabelGrandWrapper>
           <StaticLinksWrapper>
-            <LabelWrapper>
+            <LabelWrapper className="label--wrapper">
               <LabelParent Transparent LessMargin>
                 <LabelChild Large>
                   <svg viewBox="0 0 14 14" className="sidebarSearch">
@@ -56,7 +56,9 @@ class DrawerContents extends Component {
                 </LabelChild>
               </LabelParent>
               <LabelTitleWrapper>
-                <LabelTitle Light>Quick Find</LabelTitle>
+                <LabelTitle className="label--title " Light>
+                  Quick Find
+                </LabelTitle>
               </LabelTitleWrapper>
             </LabelWrapper>
           </StaticLinksWrapper>
@@ -115,7 +117,7 @@ class DrawerContents extends Component {
           </StaticLinksWrapper>
 
           <StaticLinksWrapper>
-            <LabelWrapper>
+            <LabelWrapper className="label--wrapper">
               <LabelParent Transparent LessMargin>
                 <LabelChild Large>
                   <svg viewBox="0 0 14 14" className="portfolio">
@@ -128,10 +130,12 @@ class DrawerContents extends Component {
                 </LabelChild>
               </LabelParent>
               <LabelTitleWrapper>
-                <LabelTitle Light>Products</LabelTitle>
+                <LabelTitle className="label--title " Light>
+                  Products
+                </LabelTitle>
               </LabelTitleWrapper>
             </LabelWrapper>
-            <LabelWrapper>
+            <LabelWrapper className="label--wrapper">
               <LabelParent Transparent LessMargin>
                 <LabelChild Large>
                   <svg viewBox="0 0 14 14" className="typesCreatedAt">
@@ -140,10 +144,12 @@ class DrawerContents extends Component {
                 </LabelChild>
               </LabelParent>
               <LabelTitleWrapper>
-                <LabelTitle Light>Portfolio</LabelTitle>
+                <LabelTitle className="label--title " Light>
+                  Portfolio
+                </LabelTitle>
               </LabelTitleWrapper>
             </LabelWrapper>
-            <LabelWrapper>
+            <LabelWrapper className="label--wrapper">
               <LabelParent Transparent LessMargin>
                 <LabelChild Large>
                   <svg viewBox="0 0 18 18" className="plus">
@@ -152,7 +158,9 @@ class DrawerContents extends Component {
                 </LabelChild>
               </LabelParent>
               <LabelTitleWrapper>
-                <LabelTitle Light>Contact</LabelTitle>
+                <LabelTitle className="label--title " Light>
+                  Contact
+                </LabelTitle>
               </LabelTitleWrapper>
             </LabelWrapper>
           </StaticLinksWrapper>

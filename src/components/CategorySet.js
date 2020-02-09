@@ -21,7 +21,7 @@ export class CategorySetWrapper extends Component {
     const { children } = this.props
     return (
       <CategorySet className={this.state.isHidden ? "" : "active"}>
-        <LabelWrapper>
+        <LabelWrapper className="label--wrapper">
           <LabelParent Transparent LessMargin>
             <LabelCategoryChild onClick={this.toggleHidden}>
               <svg
@@ -33,7 +33,9 @@ export class CategorySetWrapper extends Component {
             </LabelCategoryChild>
           </LabelParent>
           <LabelTitleWrapper>
-            <LabelTitle Bold>{this.props.title}</LabelTitle>
+            <LabelTitle className="label--title " Bold>
+              {this.props.title}
+            </LabelTitle>
           </LabelTitleWrapper>
         </LabelWrapper>
         {/* //End Parent Category */}

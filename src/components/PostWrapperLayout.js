@@ -93,7 +93,7 @@ export class PostWrapperLayout extends Component {
               </EmojiWrapper>
             </Container>
           </ImageWrapper>
-          <ContentWrapper>
+          <ContentWrapper className="content--wrapper">
             <Container>
               <FrameWrapperContents>{children}</FrameWrapperContents>
             </Container>

@@ -40,7 +40,7 @@ export class Topbar extends Component {
           <NightTogglerWrapper>
             <ThemeToggler>
               {({ theme, toggleTheme }) => {
-                const togglerClass = theme === "light" ? "inactive" : "active"
+                const togglerClass = theme === "dark" ? "active" : "inactive"
                 return (
                   <NightToggler
                     className={togglerClass}
