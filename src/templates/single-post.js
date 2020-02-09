@@ -10,6 +10,7 @@ const TitleWrapper = styled.header`
 const Date = styled.span`
   color: #dd4a68;
   font-size: 0.9rem;
+  font-family: Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
 `
 
 const ArticleContent = styled.div`
