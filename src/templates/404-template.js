@@ -8,6 +8,9 @@ const PagesWrapper = styled.div`
   .emoji {
     color: #000;
   }
+  @media (max-width: 992px) {
+    min-height: 70vh;
+  }
 `
 const Span = styled.span`
   color: #dd4a68;

@@ -129,11 +129,13 @@ class DrawerContents extends Component {
                   </svg>
                 </LabelChild>
               </LabelParent>
-              <LabelTitleWrapper>
-                <LabelTitle className="label--title " Light>
-                  Products
-                </LabelTitle>
-              </LabelTitleWrapper>
+              <Link to="/products" onClick={this.handleDrawer}>
+                <LabelTitleWrapper>
+                  <LabelTitle className="label--title " Light>
+                    Products
+                  </LabelTitle>
+                </LabelTitleWrapper>
+              </Link>
             </LabelWrapper>
             <LabelWrapper className="label--wrapper">
               <LabelParent Transparent LessMargin>
@@ -143,11 +145,13 @@ class DrawerContents extends Component {
                   </svg>
                 </LabelChild>
               </LabelParent>
-              <LabelTitleWrapper>
-                <LabelTitle className="label--title " Light>
-                  Portfolio
-                </LabelTitle>
-              </LabelTitleWrapper>
+              <Link to="/portfolio" onClick={this.handleDrawer}>
+                <LabelTitleWrapper>
+                  <LabelTitle className="label--title " Light>
+                    Portfolio
+                  </LabelTitle>
+                </LabelTitleWrapper>
+              </Link>
             </LabelWrapper>
             <LabelWrapper className="label--wrapper">
               <LabelParent Transparent LessMargin>
@@ -157,11 +161,13 @@ class DrawerContents extends Component {
                   </svg>
                 </LabelChild>
               </LabelParent>
-              <LabelTitleWrapper>
-                <LabelTitle className="label--title " Light>
-                  Contact
-                </LabelTitle>
-              </LabelTitleWrapper>
+              <Link to="/contact" onClick={this.handleDrawer}>
+                <LabelTitleWrapper>
+                  <LabelTitle className="label--title " Light>
+                    Contact
+                  </LabelTitle>
+                </LabelTitleWrapper>
+              </Link>
             </LabelWrapper>
           </StaticLinksWrapper>
         </Drawer>

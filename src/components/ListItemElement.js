@@ -63,13 +63,9 @@ const ListText = styled.div`
 
 export class ListItemElement extends Component {
   render() {
-    return (
-      <ListParent className="list--parent">
-        <Link
-          to={this.props.destination}
-          ref={this.props.ref}
-          onClick={this.props.handle}
-        >
+    const checkExternalLink = () => {
+      if (this.props.externalLink) {
+        return (
           <ListItem>
             <ListIconWrap>
               <svg viewBox="0 0 30 30" className="page">
@@ -85,8 +81,35 @@ export class ListItemElement extends Component {
               </ListTextParent>
             </ListTextWrap>
           </ListItem>
-        </Link>
-      </ListParent>
+        )
+      } else {
+        return (
+          <Link
+            to={this.props.destination}
+            ref={this.props.ref}
+            onClick={this.props.handle}
+          >
+            <ListItem>
+              <ListIconWrap>
+                <svg viewBox="0 0 30 30" className="page">
+                  <g>
+                    {" "}
+                    <path d="M16,1H4v28h22V11L16,1z M16,3.828L23.172,11H16V3.828z M24,27H6V3h8v10h10V27z M8,17h14v-2H8V17z M8,21h14v-2H8V21z M8,25h14v-2H8V25z"></path>{" "}
+                  </g>
+                </svg>
+              </ListIconWrap>
+              <ListTextWrap>
+                <ListTextParent>
+                  <ListText className="list--text">{this.props.title}</ListText>
+                </ListTextParent>
+              </ListTextWrap>
+            </ListItem>
+          </Link>
+        )
+      }
+    }
+    return (
+      <ListParent className="list--parent">{checkExternalLink()}</ListParent>
     )
   }
 }

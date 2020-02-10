@@ -1,7 +1,11 @@
 import React, { Component } from "react"
 import styled from "styled-components"
 
-const ListWrap = styled.div``
+const ListWrap = styled.div`
+  a {
+    text-decoration: none;
+  }
+`
 
 export class ListLoop extends Component {
   render() {

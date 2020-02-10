@@ -18,46 +18,49 @@ const ArticleLoopWrapper = styled.div`
   margin-top: 2.5rem;
 `
 
-class IndexPage extends React.Component {
+class Products extends React.Component {
   render() {
     const { data } = this.props
-    let blogPosts = []
-    data.allMarkdownRemark.edges.forEach(({ node, index }) => {
-      blogPosts.push({
-        title: node.frontmatter.title,
-        destination: "/" + node.fields.slug,
-      })
-    })
     return (
       <PageWrapperLayout imageSource={data.file.childImageSharp.fluid}>
         <SEO title="Home" />
         <PagesWrapper className="pages--wrapper">
           <h1>
-            Hi There!{" "}
-            <span role="img" aria-label="wave">
-              👋
+            Celebrate{" "}
+            <span role="img" aria-label="celebrate">
+              🥳
             </span>
           </h1>
-          <p>My name is Paras, and this is my blog!</p>
           <p>
-            I use this space to write about life, and more. Feel free to look
-            around! And thank you for staying by{" "}
-            <span className="emoji" role="img" aria-label="wave">
-              🙏
+            It's a feeling of satisfaction when we create something. Something
+            which we own. Something which we gave birth to.
+          </p>
+          <p>
+            It's incredible.{" "}
+            <span className="emoji" role="img" aria-label="dance">
+              💃🏻
             </span>
           </p>
           <ArticleLoopWrapper>
-            <h2 className="h4">Articles</h2>
+            <h2 className="h4">Products</h2>
             <hr />
             <ListLoop>
-              {blogPosts.map((elem, index) => (
+              <a href="https://secretswithbruno.com/" target="_blank">
+                <ListItemElement externalLink title="Secrets With Bruno" />
+              </a>
+              <ListItemElement title="Bokharilovesyou" destination="/" />
+              <a
+                href="https://dreamy-agnesi-0d7576.netlify.com/"
+                target="_blank"
+              >
                 <ListItemElement
-                  title={elem.title}
-                  destination={elem.destination}
-                  key={index}
-                  handle={this.scrollTop}
+                  externalLink
+                  title="Work With Bruno (In Progress)"
                 />
-              ))}
+              </a>
+              <a href="https://designwithbruno.com/" target="_blank">
+                <ListItemElement externalLink title="Design With Bruno" />
+              </a>
             </ListLoop>
           </ArticleLoopWrapper>
         </PagesWrapper>
@@ -66,24 +69,10 @@ class IndexPage extends React.Component {
   }
 }
 
-export default IndexPage
+export default Products
 
-export const HomepageQuery = graphql`
+export const productsQuery = graphql`
   query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      edges {
-        node {
-          fields {
-            slug
-          }
-          id
-          frontmatter {
-            title
-            date(formatString: "MM Do YYYY")
-          }
-        }
-      }
-    }
     file(relativePath: { eq: "hero.jpeg" }) {
       childImageSharp {
         fluid(maxWidth: 1600, maxHeight: 800) {
