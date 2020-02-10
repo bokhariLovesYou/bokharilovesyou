@@ -54,7 +54,7 @@ const ContentWrapper = styled.div`
 
 const NoImageWrapper = styled.div`
   padding: 2.5rem 0;
-  @media (min-wdith: 992px) {
+  @media (min-width: 992px) {
     padding: 5rem 0;
   }
 `
