@@ -1,7 +1,5 @@
 import React from "react"
 import SEO from "../components/seo"
-import ListLoop from "../components/ListLoop"
-import ListItemElement from "../components/ListItemElement"
 import PageWrapperLayout from "../components/PageWrapperLayout"
 import styled from "styled-components"
 import { graphql } from "gatsby"
@@ -11,13 +9,6 @@ const PagesWrapper = styled.div`
     color: #000;
   }
 `
-const ArticleLoopWrapper = styled.div`
-  max-width: 602px;
-  margin-left: 0;
-  margin-right: auto;
-  margin-top: 2.5rem;
-`
-
 const Anchor = styled.a`
   color: #dd4a68;
   font-weight: bold;

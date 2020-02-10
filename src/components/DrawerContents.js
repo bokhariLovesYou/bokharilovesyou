@@ -129,7 +129,7 @@ class DrawerContents extends Component {
                   </svg>
                 </LabelChild>
               </LabelParent>
-              <Link to="/products" onClick={this.handleDrawer}>
+              <Link to="/products" onClick={this.props.handleDrawer}>
                 <LabelTitleWrapper>
                   <LabelTitle className="label--title " Light>
                     Products
@@ -145,7 +145,7 @@ class DrawerContents extends Component {
                   </svg>
                 </LabelChild>
               </LabelParent>
-              <Link to="/portfolio" onClick={this.handleDrawer}>
+              <Link to="/portfolio" onClick={this.props.handleDrawer}>
                 <LabelTitleWrapper>
                   <LabelTitle className="label--title " Light>
                     Portfolio
@@ -161,7 +161,7 @@ class DrawerContents extends Component {
                   </svg>
                 </LabelChild>
               </LabelParent>
-              <Link to="/contact" onClick={this.handleDrawer}>
+              <Link to="/contact" onClick={this.props.handleDrawer}>
                 <LabelTitleWrapper>
                   <LabelTitle className="label--title " Light>
                     Contact

@@ -45,20 +45,29 @@ class Products extends React.Component {
             <h2 className="h4">Products</h2>
             <hr />
             <ListLoop>
-              <a href="https://secretswithbruno.com/" target="_blank">
+              <a
+                rel="noopener noreferrer"
+                href="https://secretswithbruno.com/"
+                target="_blank"
+              >
                 <ListItemElement externalLink title="Secrets With Bruno" />
               </a>
               <ListItemElement title="Bokharilovesyou" destination="/" />
               <a
                 href="https://dreamy-agnesi-0d7576.netlify.com/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <ListItemElement
                   externalLink
                   title="Work With Bruno (In Progress)"
                 />
               </a>
-              <a href="https://designwithbruno.com/" target="_blank">
+              <a
+                href="https://designwithbruno.com/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 <ListItemElement externalLink title="Design With Bruno" />
               </a>
             </ListLoop>

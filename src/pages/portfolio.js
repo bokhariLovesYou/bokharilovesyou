@@ -48,39 +48,51 @@ class Portfolio extends React.Component {
             <ListLoop>
               <a
                 href="http://www-burnhamnationwide-com.sandbox.hs-sites.com/"
-                rel="nofollow"
+                rel="nofollow noopener noreferrer"
                 target="_blank"
               >
                 <ListItemElement externalLink title="Burnham Nationwide" />
               </a>
               <a
                 href="https://www.singleclosing.com/"
-                rel="nofollow"
+                rel="nofollow noopener noreferrer"
                 target="_blank"
               >
                 <ListItemElement externalLink title="Single Closing" />
               </a>
-              <a href="https://mosibello.com/" rel="nofollow" target="_blank">
+              <a
+                href="https://mosibello.com/"
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+              >
                 <ListItemElement externalLink title="Mosibello" />
               </a>
               <a
                 href="https://www.urbanbound.com/"
-                rel="nofollow"
+                rel="nofollow noopener noreferrer"
                 target="_blank"
               >
                 <ListItemElement externalLink title="Urbanbound" />
               </a>
               <a
                 href="https://bedbuginjuries.com/"
-                rel="nofollow"
+                rel="nofollow noopener noreferrer"
                 target="_blank"
               >
                 <ListItemElement externalLink title="Bed Bug Injuries" />
               </a>
-              <a href="https://epaysystems.com/" rel="nofollow" target="_blank">
+              <a
+                href="https://epaysystems.com/"
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+              >
                 <ListItemElement externalLink title="EPAY Systems" />
               </a>
-              <a href="https://tmsnm.com/" rel="nofollow" target="_blank">
+              <a
+                href="https://tmsnm.com/"
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+              >
                 <ListItemElement externalLink title="TMSNM" />
               </a>
             </ListLoop>
