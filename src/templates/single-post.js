@@ -69,7 +69,6 @@ class SinglePost extends Component {
     const { data } = this.props
     const post = data.markdownRemark.frontmatter
     let resolutions = ""
-    console.log(post.image)
     if (post.image !== null) {
       resolutions = post.image.childImageSharp.fluid
     }
