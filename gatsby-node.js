@@ -45,5 +45,9 @@ exports.createPages = ({ actions, graphql }) => {
         },
       })
     })
+    createPage({
+      path: `/404/`,
+      component: require.resolve(`./src/templates/404-template.js`),
+    })
   })
 }

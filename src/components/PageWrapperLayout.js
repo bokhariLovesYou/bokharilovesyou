@@ -1,7 +1,6 @@
 import React, { Component } from "react"
 import styled from "styled-components"
 import FrameWrapperContents from "./FrameWrapperContents"
-import "bootstrap/dist/css/bootstrap.min.css"
 import "../styles/index.scss"
 import Container from "react-bootstrap/Container"
 import Img from "gatsby-image"
