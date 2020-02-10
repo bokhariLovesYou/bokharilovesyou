@@ -53,6 +53,17 @@ h6,
   backface-visibility: hidden;
 }
 
+.searchNew {
+  width: 18px;
+  height: 18px;
+  display: block;
+  fill: rgba(202, 204, 206, 0.6);
+  flex-shrink: 0;
+  backface-visibility: hidden;
+  margin-right: 10px;
+  flex-grow: 0;
+}
+
 .triangle {
   width: 0.6875em;
   height: 0.6875em;
@@ -238,6 +249,26 @@ body {
     .list--parent {
       &:hover {
         background-color: rgb(71, 76, 80);
+      }
+    }
+    .search--wrapper {
+      background-color: #2f3437;
+      input {
+        color: rgba(255, 255, 255, 0.6);
+      }
+      .search-page--elem {
+        color: rgba(255, 255, 255, 0.8);
+      }
+      .search-page--cat {
+        color: rgba(255, 255, 255, 0.4);
+      }
+      svg {
+        fill: rgba(255, 255, 255, 0.7);
+      }
+      .search-result--parent--wrapper {
+        &:hover {
+          background-color: rgb(71, 76, 80);
+        }
       }
     }
   }

@@ -6,11 +6,13 @@ import { GlobalHeader, FlexContainer } from "./HeaderComponents"
 class Header extends Component {
   render() {
     return (
-      <FlexContainer>
-        <GlobalHeader className="global--header">
-          <Topbar handle={this.props.handle} />
-        </GlobalHeader>
-      </FlexContainer>
+      <>
+        <FlexContainer>
+          <GlobalHeader className="global--header">
+            <Topbar handle={this.props.handle} />
+          </GlobalHeader>
+        </FlexContainer>
+      </>
     )
   }
 }

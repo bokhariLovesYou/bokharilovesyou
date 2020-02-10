@@ -56,7 +56,11 @@ class DrawerContents extends Component {
                 </LabelChild>
               </LabelParent>
               <LabelTitleWrapper>
-                <LabelTitle className="label--title " Light>
+                <LabelTitle
+                  onClick={this.props.searchHandle}
+                  className="label--title "
+                  Light
+                >
                   Quick Find
                 </LabelTitle>
               </LabelTitleWrapper>

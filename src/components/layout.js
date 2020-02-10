@@ -3,6 +3,8 @@ import PropTypes from "prop-types"
 import styled from "styled-components"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "../styles/index.scss"
+import { graphql, StaticQuery } from "gatsby"
+import Search from "./Search"
 
 // Components
 import Header from "./header"
@@ -27,6 +29,7 @@ const FrameWrapper = styled.div`
 class Layout extends React.Component {
   state = {
     navToggled: "inactive",
+    searchActive: false,
   }
 
   handleDrawerToggle = () => {
@@ -41,11 +44,39 @@ class Layout extends React.Component {
     }
   }
 
+  handleSearchModal = () => {
+    if (!this.state.searchActive) {
+      this.setState({
+        searchActive: true,
+      })
+    }
+  }
+
   closeDrawer = () => {
     this.setState({
       navToggled: "inactive",
     })
   }
+
+  handleClickOutside = () => {
+    if (this.state.searchActive) {
+      this.setState({
+        searchActive: false,
+      })
+    }
+    this.setState({
+      navToggled: "inactive",
+    })
+  }
+
+  closeSearchBar = () => {
+    if (this.state.searchActive) {
+      this.setState({
+        searchActive: false,
+      })
+    }
+  }
+
   render() {
     const { children } = this.props
     return (
@@ -55,6 +86,26 @@ class Layout extends React.Component {
             hamBurgerState={this.state.navToggled}
             closeDrawer={this.closeDrawer}
             handleDrawer={this.handleDrawerToggle}
+            searchHandle={this.handleSearchModal}
+          />
+          <StaticQuery
+            query={graphql`
+              query SearchIndexQuery {
+                siteSearchIndex {
+                  index
+                }
+              }
+            `}
+            render={data => {
+              return (
+                <Search
+                  searchActive={this.state.searchActive}
+                  searchIndex={data.siteSearchIndex.index}
+                  closeModal={this.handleClickOutside}
+                  closeSearchBar={this.closeSearchBar}
+                />
+              )
+            }}
           />
           <FrameWrapper id="frame-wrapper">
             <Header handle={this.handleDrawerToggle} />

@@ -68,7 +68,6 @@ export class PostWrapperLayout extends Component {
   }
   render() {
     const { children } = this.props
-    console.log(this.props)
     const checkImage = () => {
       if (this.props.imageSource === "") {
         return <NoImageWrapper />
