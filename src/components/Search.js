@@ -8,7 +8,7 @@ const SearchWrapper = styled.div`
   left: 0;
   bottom: 0;
   right: 0;
-  background: rgba(15, 15, 15, 0.6);
+  background: rgba(15, 15, 15, 0.8);
   z-index: 999999;
   a {
     color: inherit;
@@ -37,6 +37,10 @@ const SearchWrapperContents = styled.div`
   overflow: hidden;
   width: 75%;
   max-width: 600px;
+  @media (max-width: 768px) {
+    width: 100%;
+    max-width: 90%;
+  }
   min-height: 50px;
   max-height: 80vh;
   margin-left: auto;

@@ -20,6 +20,16 @@ import {
 } from "./HeaderComponents"
 
 class DrawerContents extends Component {
+  slugify = text => {
+    return text
+      .toString()
+      .toLowerCase()
+      .replace(/\s+/g, "-") // Replace spaces with -
+      .replace(/[^\w-]+/g, "") // Remove all non-word chars
+      .replace(/--+/g, "-") // Replace multiple - with single -
+      .replace(/^-+/, "") // Trim - from start of text
+      .replace(/-+$/, "") // Trim - from end of text
+  }
   render() {
     return (
       <div>
@@ -101,7 +111,11 @@ class DrawerContents extends Component {
                 return (
                   <div>
                     {obj.map((elem, index) => (
-                      <CategorySetWrapper key={index} title={elem.label}>
+                      <CategorySetWrapper
+                        destination={"/tag/" + this.slugify(elem.label)}
+                        key={index}
+                        title={elem.label}
+                      >
                         {elem.data.map((innerPages, index) => (
                           <CategoryChildWrapper
                             destination={innerPages.destination}

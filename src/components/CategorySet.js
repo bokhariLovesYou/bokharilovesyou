@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import { Link } from "gatsby"
 import {
   CategorySet,
   LabelWrapper,
@@ -33,9 +34,11 @@ export class CategorySetWrapper extends Component {
             </LabelCategoryChild>
           </LabelParent>
           <LabelTitleWrapper>
-            <LabelTitle className="label--title " Bold>
-              {this.props.title}
-            </LabelTitle>
+            <Link to={this.props.destination}>
+              <LabelTitle className="label--title " Bold>
+                {this.props.title}
+              </LabelTitle>
+            </Link>
           </LabelTitleWrapper>
         </LabelWrapper>
         {/* //End Parent Category */}
