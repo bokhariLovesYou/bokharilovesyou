@@ -25,7 +25,7 @@ export class CategoryChildWrapper extends Component {
             </LabelCategoryChild>
           </LabelParent>
           <LabelTitleWrapper>
-            <Link to={this.props.destination}>
+            <Link to={this.props.destination} activeClassName="i-am-active">
               <LabelTitle
                 className="label--title "
                 Light

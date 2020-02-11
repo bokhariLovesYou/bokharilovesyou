@@ -273,3 +273,22 @@ body {
     }
   }
 }
+
+body {
+  .drawer--contents {
+    .i-am-active {
+      .label--title {
+        color: #dd4a68;
+      }
+    }
+  }
+  &.dark {
+    .drawer--contents {
+      .i-am-active {
+        .label--title {
+          color: peachpuff;
+        }
+      }
+    }
+  }
+}
