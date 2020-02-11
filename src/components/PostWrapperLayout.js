@@ -20,7 +20,7 @@ const ImageWrapper = styled.div`
       height: 300px;
     }
     @media (min-width: 1600px) {
-      height: 400px;
+      height: 350px;
     }
   }
 `
