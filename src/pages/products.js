@@ -23,7 +23,7 @@ class Products extends React.Component {
     const { data } = this.props
     return (
       <PageWrapperLayout imageSource={data.file.childImageSharp.fluid}>
-        <SEO title="Home" />
+        <SEO title="Products" description="A list of my products" />
         <PagesWrapper className="pages--wrapper">
           <h1>
             Celebrate{" "}
@@ -52,6 +52,13 @@ class Products extends React.Component {
               >
                 <ListItemElement externalLink title="Secrets With Bruno" />
               </a>
+              <a
+                href="https://designwithbruno.com/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <ListItemElement externalLink title="Design With Bruno" />
+              </a>
               <ListItemElement title="Bokharilovesyou" destination="/" />
               <a
                 href="https://dreamy-agnesi-0d7576.netlify.com/"
@@ -62,13 +69,6 @@ class Products extends React.Component {
                   externalLink
                   title="Work With Bruno (In Progress)"
                 />
-              </a>
-              <a
-                href="https://designwithbruno.com/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <ListItemElement externalLink title="Design With Bruno" />
               </a>
             </ListLoop>
           </ArticleLoopWrapper>

@@ -25,7 +25,7 @@ class Contact extends React.Component {
     const { data } = this.props
     return (
       <PageWrapperLayout imageSource={data.file.childImageSharp.fluid}>
-        <SEO title="Home" />
+        <SEO title="Contact" description="Yippee, let's get in touch!" />
         <PagesWrapper className="pages--wrapper">
           <h1>
             Yay!{" "}

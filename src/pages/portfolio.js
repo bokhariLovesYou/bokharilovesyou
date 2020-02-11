@@ -23,7 +23,10 @@ class Portfolio extends React.Component {
     const { data } = this.props
     return (
       <PageWrapperLayout imageSource={data.file.childImageSharp.fluid}>
-        <SEO title="Home" />
+        <SEO
+          title="Portfolio"
+          description="This is what I do 9 to 5 (or 10 to 6), whatever"
+        />
         <PagesWrapper className="pages--wrapper">
           <h1>
             Joy{" "}

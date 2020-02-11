@@ -21,7 +21,10 @@ class BadRoute extends React.Component {
     const { data } = this.props
     return (
       <PageWrapperLayout imageSource={data.file.childImageSharp.fluid}>
-        <SEO title="Home" />
+        <SEO
+          title="404. Not Found"
+          description="Oops, you just hit a bad route"
+        />
         <PagesWrapper className="pages--wrapper">
           <h1>
             <Span>404.</Span> Not Found.{" "}

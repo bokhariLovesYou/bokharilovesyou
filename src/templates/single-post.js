@@ -74,7 +74,7 @@ class SinglePost extends Component {
     }
     return (
       <PostWrapperLayout imageSource={resolutions}>
-        <SEO title={post.metaTitle} />
+        <SEO title={post.metaTitle} description={post.metaDescription} />
         <Article>
           <TitleWrapper>
             <h1>{post.title}</h1>
