@@ -10,13 +10,6 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-dark-mode`,
     {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        // replace "UA-XXXXXXXXX-X" with your own Tracking ID
-        trackingId: "UA-111625564-2",
-      },
-    },
-    {
       resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,
       options: {
         // Fields to index
@@ -34,6 +27,12 @@ module.exports = {
         },
         // Optional filter to limit indexed nodes
         filter: (node, getNode) => node.frontmatter.tags !== "exempt",
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-111625564-2",
       },
     },
     {
