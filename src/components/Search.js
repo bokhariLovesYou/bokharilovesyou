@@ -74,10 +74,16 @@ const InputWrapper = styled.div`
 const SearchResultParentWrapper = styled.div`
   user-select: none;
   transition: none 0s ease 0s;
-  cursor: pointer;
+  cursor: ${props => (props.NoHover ? "" : "pointer")}
   width: 100%;
   &:hover {
-    background-color: #efefef;
+    background-color: ${props => (props.NoHover ? "" : "#efefef")}
+  }
+  &.active {
+    display: block;
+  }
+  &.inactive {
+    display: none;
   }
 `
 
@@ -128,6 +134,7 @@ export default class Search extends Component {
     this.state = {
       query: ``,
       results: [],
+      notFound: false,
     }
   }
 
@@ -151,8 +158,25 @@ export default class Search extends Component {
   }
 
   render() {
+    const checkResults = () => {
+      this.setState({
+        notFound: true,
+      })
+      if (this.state.results.length > 0) {
+        this.setState({
+          notFound: false,
+        })
+      }
+    }
+
+    const handleKeyDown = () => {
+      checkResults()
+    }
+
     return (
-      <SearchWrapper className={this.props.searchActive ? "" : "inactive"}>
+      <SearchWrapper
+        className={this.props.searchActive ? "active" : "inactive"}
+      >
         <SearchWrapperContents
           ref={node => (this.node = node)}
           className="search--wrapper"
@@ -165,9 +189,32 @@ export default class Search extends Component {
               type="text"
               value={this.state.query}
               onChange={this.search}
+              onKeyUp={handleKeyDown}
             />
           </InputWrapper>
           <SearchContainer>
+            <SearchResultParentWrapper
+              NoHover
+              className={this.state.notFound ? "active" : "inactive"}
+            >
+              <SearchResultParent>
+                <SearchSvgWrapper>
+                  <svg viewBox="0 0 30 30" className="page">
+                    <g>
+                      <path d="M16,1H4v28h22V11L16,1z M16,3.828L23.172,11H16V3.828z M24,27H6V3h8v10h10V27z M8,17h14v-2H8V17z M8,21h14v-2H8V21z M8,25h14v-2H8V25z"></path>{" "}
+                    </g>
+                  </svg>
+                  <SearchTitleWrapper>
+                    <SearchPageElem className="search-page--elem">
+                      Oops, no results found...
+                    </SearchPageElem>
+                    <SearchPageCategory className="search-page--cat">
+                      Try searching something else.
+                    </SearchPageCategory>
+                  </SearchTitleWrapper>
+                </SearchSvgWrapper>
+              </SearchResultParent>
+            </SearchResultParentWrapper>
             {this.state.results.map(page => (
               <Link to={"/" + page.slug}>
                 <SearchResultParentWrapper
