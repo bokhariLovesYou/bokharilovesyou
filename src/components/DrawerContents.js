@@ -115,6 +115,7 @@ class DrawerContents extends Component {
                         destination={"/tag/" + this.slugify(elem.label)}
                         key={index}
                         title={elem.label}
+                        handle={this.props.closeDrawer}
                       >
                         {elem.data.map((innerPages, index) => (
                           <CategoryChildWrapper

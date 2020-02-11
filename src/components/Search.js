@@ -155,6 +155,10 @@ export default class Search extends Component {
       return
     }
     this.props.closeSearchBar()
+    this.setState({
+      query: ``,
+      results: [],
+    })
   }
 
   render() {

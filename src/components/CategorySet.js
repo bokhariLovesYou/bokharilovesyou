@@ -35,7 +35,11 @@ export class CategorySetWrapper extends Component {
           </LabelParent>
           <LabelTitleWrapper>
             <Link to={this.props.destination}>
-              <LabelTitle className="label--title " Bold>
+              <LabelTitle
+                className="label--title "
+                Bold
+                onClick={this.props.handle}
+              >
                 {this.props.title}
               </LabelTitle>
             </Link>
