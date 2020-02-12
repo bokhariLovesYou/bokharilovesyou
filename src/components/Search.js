@@ -138,15 +138,32 @@ export default class Search extends Component {
     }
   }
 
+  closeSearchBar = () => {
+    this.props.closeSearchBar()
+    this.setState({
+      query: ``,
+      results: [],
+      notFound: false,
+    })
+  }
+
+  escFunction = e => {
+    if (e.keyCode === 27) {
+      this.closeSearchBar()
+    }
+  }
+
   componentWillMount() {
     if (typeof document !== `undefined`) {
       document.addEventListener("mousedown", this.handleClick, false)
+      document.addEventListener("keydown", this.escFunction, false)
     }
   }
 
   componentWillUnmount() {
     if (typeof document !== `undefined`) {
       document.removeEventListener("mousedown", this.handleClick, false)
+      document.removeEventListener("keydown", this.escFunction, false)
     }
   }
 
@@ -154,11 +171,7 @@ export default class Search extends Component {
     if (this.node.contains(e.target)) {
       return
     }
-    this.props.closeSearchBar()
-    this.setState({
-      query: ``,
-      results: [],
-    })
+    this.closeSearchBar()
   }
 
   render() {
@@ -219,10 +232,10 @@ export default class Search extends Component {
                 </SearchSvgWrapper>
               </SearchResultParent>
             </SearchResultParentWrapper>
-            {this.state.results.map(page => (
+            {this.state.results.map((page, index) => (
               <Link to={"/" + page.slug}>
                 <SearchResultParentWrapper
-                  key={page.id}
+                  key={index}
                   onClick={this.props.closeModal}
                   className="search-result--parent--wrapper"
                 >
@@ -230,7 +243,6 @@ export default class Search extends Component {
                     <SearchSvgWrapper>
                       <svg viewBox="0 0 30 30" className="page">
                         <g>
-                          {console.log(page)}
                           <path d="M16,1H4v28h22V11L16,1z M16,3.828L23.172,11H16V3.828z M24,27H6V3h8v10h10V27z M8,17h14v-2H8V17z M8,21h14v-2H8V21z M8,25h14v-2H8V25z"></path>{" "}
                         </g>
                       </svg>

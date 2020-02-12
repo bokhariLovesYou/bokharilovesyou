@@ -14,10 +14,10 @@ const ImageWrapper = styled.div`
     height: 216px;
     z-index: -1;
     @media (min-width: 992px) {
-      height: 240px;
+      height: 300px;
     }
     @media (min-width: 1500px) {
-      height: 300px;
+      height: 325px;
     }
     @media (min-width: 1600px) {
       height: 350px;
