@@ -64,6 +64,13 @@ class Portfolio extends React.Component {
                 <ListItemElement externalLink title="Single Closing" />
               </a>
               <a
+                href="https://gildasuites.com/"
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+              >
+                <ListItemElement externalLink title="Gilda Suites" />
+              </a>
+              <a
                 href="https://mosibello.com/"
                 rel="nofollow noopener noreferrer"
                 target="_blank"
