@@ -96,14 +96,14 @@ class Portfolio extends React.Component {
                 rel="nofollow noopener noreferrer"
                 target="_blank"
               >
-                <a
-                  href="https://youthful-montalcini-3c414b.netlify.com/"
-                  rel="nofollow noopener noreferrer"
-                  target="_blank"
-                >
-                  <ListItemElement externalLink title="BBT Law" />
-                </a>
                 <ListItemElement externalLink title="Mosibello" />
+              </a>
+              <a
+                href="https://buttarbokharitas.com/"
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+              >
+                <ListItemElement externalLink title="BBT Law" />
               </a>
               <a
                 href="https://www.urbanbound.com/"
