@@ -50,11 +50,25 @@ class Portfolio extends React.Component {
             <hr />
             <ListLoop>
               <a
-                href="http://www-burnhamnationwide-com.sandbox.hs-sites.com/"
+                href="https://www.burnhamnationwide.com/"
                 rel="nofollow noopener noreferrer"
                 target="_blank"
               >
                 <ListItemElement externalLink title="Burnham Nationwide" />
+              </a>
+              <a
+                href="https://ghostproductions.com/"
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+              >
+                <ListItemElement externalLink title="Ghost Productions" />
+              </a>
+              <a
+                href="http://alliance-exposition.com/"
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+              >
+                <ListItemElement externalLink title="Alliance Exposition" />
               </a>
               <a
                 href="https://www.singleclosing.com/"
@@ -62,6 +76,13 @@ class Portfolio extends React.Component {
                 target="_blank"
               >
                 <ListItemElement externalLink title="Single Closing" />
+              </a>
+              <a
+                href="http://amper.xyz/"
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+              >
+                <ListItemElement externalLink title="Amper" />
               </a>
               <a
                 href="https://gildasuites.com/"
