@@ -64,7 +64,7 @@ class Portfolio extends React.Component {
                 <ListItemElement externalLink title="Ghost Productions" />
               </a>
               <a
-                href="http://alliance-exposition.com/"
+                href="https://alliance-exposition.com/"
                 rel="nofollow noopener noreferrer"
                 target="_blank"
               >
@@ -78,7 +78,7 @@ class Portfolio extends React.Component {
                 <ListItemElement externalLink title="Single Closing" />
               </a>
               <a
-                href="http://amper.xyz/"
+                href="https://www.amper.xyz/"
                 rel="nofollow noopener noreferrer"
                 target="_blank"
               >
@@ -113,7 +113,7 @@ class Portfolio extends React.Component {
                 <ListItemElement externalLink title="Urbanbound" />
               </a>
               <a
-                href="https://bedbuginjuries.com/"
+                href="https://www.bedbuginjuries.com/"
                 rel="nofollow noopener noreferrer"
                 target="_blank"
               >
