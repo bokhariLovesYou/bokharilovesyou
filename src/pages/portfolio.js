@@ -50,6 +50,13 @@ class Portfolio extends React.Component {
             <hr />
             <ListLoop>
               <a
+                href="https://theshaderoom.com/"
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+              >
+                <ListItemElement externalLink title="The Shade Room" />
+              </a>
+              <a
                 href="https://www.burnhamnationwide.com/"
                 rel="nofollow noopener noreferrer"
                 target="_blank"
