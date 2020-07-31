@@ -46,6 +46,13 @@ class Products extends React.Component {
             <hr />
             <ListLoop>
               <a
+                href="https://focuswithbruno.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ListItemElement externalLink title="Focus With Bruno" />
+              </a>
+              <a
                 rel="noopener noreferrer"
                 href="https://devndesignatoneims.netlify.com/"
                 target="_blank"
