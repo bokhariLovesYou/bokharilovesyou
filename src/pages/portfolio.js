@@ -71,6 +71,13 @@ class Portfolio extends React.Component {
                 <ListItemElement externalLink title="Ghost Productions" />
               </a>
               <a
+                href="https://www.oneims.com/"
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+              >
+                <ListItemElement externalLink title="OneIMS Inc." />
+              </a>
+              <a
                 href="https://alliance-exposition.com/"
                 rel="nofollow noopener noreferrer"
                 target="_blank"
