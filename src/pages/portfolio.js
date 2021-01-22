@@ -92,11 +92,11 @@ class Portfolio extends React.Component {
                 <ListItemElement externalLink title="Single Closing" />
               </a>
               <a
-                href="https://www.amper.xyz/"
+                href="https://rfxcel.com/"
                 rel="nofollow noopener noreferrer"
                 target="_blank"
               >
-                <ListItemElement externalLink title="Amper" />
+                <ListItemElement externalLink title="Rfxcel" />
               </a>
               <a
                 href="https://gildasuites.com/"
@@ -127,18 +127,25 @@ class Portfolio extends React.Component {
                 <ListItemElement externalLink title="Urbanbound" />
               </a>
               <a
-                href="https://www.bedbuginjuries.com/"
-                rel="nofollow noopener noreferrer"
-                target="_blank"
-              >
-                <ListItemElement externalLink title="Bed Bug Injuries" />
-              </a>
-              <a
                 href="https://epaysystems.com/"
                 rel="nofollow noopener noreferrer"
                 target="_blank"
               >
                 <ListItemElement externalLink title="EPAY Systems" />
+              </a>
+              <a
+                href="https://www.amper.xyz/"
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+              >
+                <ListItemElement externalLink title="Amper" />
+              </a>
+              <a
+                href="https://www.bedbuginjuries.com/"
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+              >
+                <ListItemElement externalLink title="Bed Bug Injuries" />
               </a>
               <a
                 href="https://tmsnm.com/"
