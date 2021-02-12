@@ -191,7 +191,7 @@ export const LabelWrapper = styled.div`
   align-items: center;
   min-height: 27px;
   font-size: 14px;
-  padding: ${props => (props.InnerChild ? "2px 14px 2px 28px" : "2px 14px")};
+  padding: ${(props) => (props.InnerChild ? "2px 14px 2px 28px" : "2px 14px")};
   width: 100%;
   overflow: hidden;
   &:hover {
@@ -207,14 +207,14 @@ export const LabelParent = styled.div`
   border-radius: 3px;
   width: 18px;
   height: 18px;
-  background: ${props =>
+  background: ${(props) =>
     props.Transparent ? "transparent" : "rgba(55, 53, 47, 0.4)"};
   color: rgba(255, 255, 255, 0.9);
   text-transform: uppercase;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: ${props => (props.LessMargin ? "4px" : "6px")};
+  margin-right: ${(props) => (props.LessMargin ? "4px" : "6px")};
 `
 
 export const LabelChild = styled.div`
@@ -246,7 +246,7 @@ export const LabelTitleWrapper = styled.div`
 `
 export const LabelTitle = styled.div`
   margin-right: 6px;
-  color: ${props =>
+  color: ${(props) =>
     props.Light ? "rgba(55, 53, 47, 0.6)" : "rgb(55, 53, 47)"};
   font-weight: 600;
   margin-top: 0px;
@@ -257,7 +257,10 @@ export const LabelTitle = styled.div`
 
 export const StaticLinksWrapper = styled.div`
   padding: 1rem 0;
-  overflow-y: ${props => (props.CategoryWrapper ? "scroll" : "")};
+  overflow-y: ${(props) => (props.CategoryWrapper ? "scroll" : "")};
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `
 
 export const ChildPagesWrapper = styled.div`
