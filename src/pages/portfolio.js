@@ -25,7 +25,7 @@ class Portfolio extends React.Component {
       <PageWrapperLayout imageSource={data.file.childImageSharp.fluid}>
         <SEO
           title="Portfolio"
-          description="This is what I do 9 to 5 (or 10 to 6), whatever"
+          description="This is what I do 9 to 5 (or 10 to 6)"
         />
         <PagesWrapper className="pages--wrapper">
           <h1>
@@ -106,6 +106,13 @@ class Portfolio extends React.Component {
                 <ListItemElement externalLink title="Rfxcel" />
               </a>
               <a
+                href="http://learn.campus.com/"
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+              >
+                <ListItemElement externalLink title="Learn With Campus" />
+              </a>
+              <a
                 href="https://gildasuites.com/"
                 rel="nofollow noopener noreferrer"
                 target="_blank"
@@ -125,6 +132,13 @@ class Portfolio extends React.Component {
                 target="_blank"
               >
                 <ListItemElement externalLink title="BBT Law" />
+              </a>
+              <a
+                href="https://mossami.netlify.app/"
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+              >
+                <ListItemElement externalLink title="Mossami" />
               </a>
               <a
                 href="https://www.urbanbound.com/"
@@ -153,6 +167,13 @@ class Portfolio extends React.Component {
                 target="_blank"
               >
                 <ListItemElement externalLink title="Bed Bug Injuries" />
+              </a>
+              <a
+                href="https://bedbuglawyer.org/"
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+              >
+                <ListItemElement externalLink title="Bed Bug Lawyer" />
               </a>
               <a
                 href="https://tmsnm.com/"
