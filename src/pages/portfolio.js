@@ -57,6 +57,13 @@ class Portfolio extends React.Component {
                 <ListItemElement externalLink title="The Shade Room" />
               </a>
               <a
+                href="https://www.pravadaprivatelabel.com/"
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+              >
+                <ListItemElement externalLink title="Pravada Private Label" />
+              </a>
+              <a
                 href="https://www.burnhamnationwide.com/"
                 rel="nofollow noopener noreferrer"
                 target="_blank"
