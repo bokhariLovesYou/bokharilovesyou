@@ -45,6 +45,13 @@ class Products extends React.Component {
             <h2 className="h4">Products</h2>
             <hr />
             <ListLoop>
+            <a
+                href="https://roicalculator.ai/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ListItemElement externalLink title="ROI Calculator" />
+              </a>
               <a
                 href="https://focuswithbruno.com/"
                 target="_blank"
