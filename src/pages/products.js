@@ -53,6 +53,13 @@ class Products extends React.Component {
                 <ListItemElement externalLink title="ROI Calculator" />
               </a>
               <a
+                href="https://siteplanner.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ListItemElement externalLink title="Site Planner" />
+              </a>
+              <a
                 href="https://focuswithbruno.com/"
                 target="_blank"
                 rel="noopener noreferrer"
