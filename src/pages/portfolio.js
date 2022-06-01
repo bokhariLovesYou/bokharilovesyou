@@ -57,6 +57,13 @@ class Portfolio extends React.Component {
                 <ListItemElement externalLink title="The Shade Room" />
               </a>
               <a
+                href="https://www.lolavalentina.com/"
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+              >
+                <ListItemElement externalLink title="Lola Valentina" />
+              </a>
+              <a
                 href="https://www.pravadaprivatelabel.com/"
                 rel="nofollow noopener noreferrer"
                 target="_blank"
@@ -84,6 +91,7 @@ class Portfolio extends React.Component {
               >
                 <ListItemElement externalLink title="360 Co Pack" />
               </a>
+              
               <a
                 href="https://www.oneims.com/"
                 rel="nofollow noopener noreferrer"
@@ -99,11 +107,25 @@ class Portfolio extends React.Component {
                 <ListItemElement externalLink title="Alliance Exposition" />
               </a>
               <a
+                href="https://thesmallbudget.com/"
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+              >
+                <ListItemElement externalLink title="The Small Budget" />
+              </a>
+              {/* <a
                 href="https://www.singleclosing.com/"
                 rel="nofollow noopener noreferrer"
                 target="_blank"
               >
                 <ListItemElement externalLink title="Single Closing" />
+              </a> */}
+              <a
+                href="https://www.urbanbound.com/"
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+              >
+                <ListItemElement externalLink title="Urbanbound" />
               </a>
               <a
                 href="https://rfxcel.com/"
@@ -120,6 +142,27 @@ class Portfolio extends React.Component {
                 <ListItemElement externalLink title="Learn With Campus" />
               </a>
               <a
+                href="https://apacks.com/"
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+              >
+                <ListItemElement externalLink title="Apacks" />
+              </a>
+              <a
+                href="https://buttarbokharitas.com/"
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+              >
+                <ListItemElement externalLink title="BBT Law" />
+              </a>
+              <a
+                href="https://epaysystems.com/"
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+              >
+                <ListItemElement externalLink title="EPAY Systems" />
+              </a>
+              <a
                 href="https://gildasuites.com/"
                 rel="nofollow noopener noreferrer"
                 target="_blank"
@@ -134,32 +177,11 @@ class Portfolio extends React.Component {
                 <ListItemElement externalLink title="Mosibello" />
               </a>
               <a
-                href="https://buttarbokharitas.com/"
-                rel="nofollow noopener noreferrer"
-                target="_blank"
-              >
-                <ListItemElement externalLink title="BBT Law" />
-              </a>
-              <a
                 href="https://mossami.netlify.app/"
                 rel="nofollow noopener noreferrer"
                 target="_blank"
               >
                 <ListItemElement externalLink title="Mossami" />
-              </a>
-              <a
-                href="https://www.urbanbound.com/"
-                rel="nofollow noopener noreferrer"
-                target="_blank"
-              >
-                <ListItemElement externalLink title="Urbanbound" />
-              </a>
-              <a
-                href="https://epaysystems.com/"
-                rel="nofollow noopener noreferrer"
-                target="_blank"
-              >
-                <ListItemElement externalLink title="EPAY Systems" />
               </a>
               <a
                 href="https://www.amper.xyz/"
