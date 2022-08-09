@@ -50,7 +50,7 @@ class Products extends React.Component {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <ListItemElement externalLink title="Design Hub (Unauthenticated sandbox for public demos) -- a Drag and Drop page builder to create prototypes and blueprints" />
+                <ListItemElement externalLink title="Design Hub (public sandbox) -- a Drag and Drop page builder to create prototypes" />
               </a>
             <a
                 href="https://roicalculator.ai/"
