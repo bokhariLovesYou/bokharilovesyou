@@ -49,6 +49,13 @@ class Portfolio extends React.Component {
             <h2 className="h4">Portfolio</h2>
             <hr />
             <ListLoop>
+            <a
+                href="https://urbanbellemag.com/"
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+              >
+                <ListItemElement externalLink title="Urbanbelle Magazine" />
+              </a>
               <a
                 href="https://theshaderoom.com/"
                 rel="nofollow noopener noreferrer"
@@ -83,6 +90,13 @@ class Portfolio extends React.Component {
                 target="_blank"
               >
                 <ListItemElement externalLink title="Urbanbound" />
+              </a>
+              <a
+                href="https://www.vcinjurylaw.com/"
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+              >
+                <ListItemElement externalLink title="Vasilatos Law" />
               </a>
               <a
                 href="https://www.360copack.com/"
