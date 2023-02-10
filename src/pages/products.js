@@ -53,7 +53,7 @@ class Products extends React.Component {
                 <ListItemElement externalLink title="Meta Data Generator" />
               </a> 
             <a
-                href="https://designhubfe.netlify.app/"
+                href="https://designhubfe.netlify.app/clients/1/bp/1"
                 target="_blank"
                 rel="noopener noreferrer"
               >
