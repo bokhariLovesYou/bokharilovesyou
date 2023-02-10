@@ -56,6 +56,13 @@ class Portfolio extends React.Component {
               >
                 <ListItemElement externalLink title="Urbanbelle Magazine" />
               </a>
+            <a
+                href="https://www.thecastlegrp.com/"
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+              >
+                <ListItemElement externalLink title="The Castle Group" />
+              </a>
               <a
                 href="https://theshaderoom.com/"
                 rel="nofollow noopener noreferrer"
@@ -76,6 +83,13 @@ class Portfolio extends React.Component {
                 target="_blank"
               >
                 <ListItemElement externalLink title="Pravada Private Label" />
+              </a>
+              <a
+                href="https://www.weve.co/"
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+              >
+                <ListItemElement externalLink title="Weve" />
               </a>
               <a
                 href="https://www.burnhamnationwide.com/"
