@@ -45,13 +45,13 @@ class Products extends React.Component {
             <h2 className="h4">Products</h2>
             <hr />
             <ListLoop>
-            <a
+            {/* <a
                 href="https://tools-oneims.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <ListItemElement externalLink title="Meta Data Generator" />
-              </a> 
+              </a>  */}
             <a
                 href="https://designhubfe.netlify.app/clients/1/bp/1"
                 target="_blank"
@@ -59,12 +59,19 @@ class Products extends React.Component {
               >
                 <ListItemElement externalLink title="Design Hub (public sandbox) -- a Drag and Drop page builder to create prototypes" />
               </a>
-              <a
+              {/* <a
                 href="https://siteplanner.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <ListItemElement externalLink title="Site Planner" />
+              </a> */}
+              <a
+                href="https://focuswithbruno.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ListItemElement externalLink title="Focus With Bruno" />
               </a>
             <a
                 href="https://roicalculator.ai/"
@@ -74,26 +81,19 @@ class Products extends React.Component {
                 <ListItemElement externalLink title="ROI Calculator" />
               </a>
               <a
-                href="https://focuswithbruno.com/"
-                target="_blank"
                 rel="noopener noreferrer"
-              >
-                <ListItemElement externalLink title="Focus With Bruno" />
-              </a>
-              <a
-                rel="noopener noreferrer"
-                href="https://devndesignatoneims.netlify.com/"
+                href="https://devndesignatoneims.netlify.app/"
                 target="_blank"
               >
                 <ListItemElement externalLink title="Dev&Desgin at OneIMS" />
               </a>
-              <a
+              {/* <a
                 rel="noopener noreferrer"
                 href="https://secretswithbruno.com/"
                 target="_blank"
               >
                 <ListItemElement externalLink title="Secrets With Bruno" />
-              </a>
+              </a> */}
               <a
                 href="https://designwithbruno.com/"
                 rel="noopener noreferrer"
@@ -102,7 +102,7 @@ class Products extends React.Component {
                 <ListItemElement externalLink title="Design With Bruno" />
               </a>
               <ListItemElement title="Bokharilovesyou" destination="/" />
-              <a
+              {/* <a
                 href="https://dreamy-agnesi-0d7576.netlify.com/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -111,7 +111,7 @@ class Products extends React.Component {
                   externalLink
                   title="Work With Bruno (In Progress)"
                 />
-              </a>
+              </a> */}
             </ListLoop>
           </ArticleLoopWrapper>
         </PagesWrapper>

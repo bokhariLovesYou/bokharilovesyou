@@ -50,6 +50,13 @@ class Portfolio extends React.Component {
             <hr />
             <ListLoop>
             <a
+                href="https://www.taylor.com/"
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+              >
+                <ListItemElement externalLink title="Taylor" />
+              </a>
+            <a
                 href="https://urbanbellemag.com/"
                 rel="nofollow noopener noreferrer"
                 target="_blank"
@@ -120,19 +127,26 @@ class Portfolio extends React.Component {
                 <ListItemElement externalLink title="360 Co Pack" />
               </a>
               <a
+                href="https://epaysystems.com/"
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+              >
+                <ListItemElement externalLink title="EPAY Systems" />
+              </a>
+              <a
                 href="https://alliance-exposition.com/"
                 rel="nofollow noopener noreferrer"
                 target="_blank"
               >
                 <ListItemElement externalLink title="Alliance Exposition" />
               </a>
-              <a
+              {/* <a
                 href="https://thesmallbudget.com/"
                 rel="nofollow noopener noreferrer"
                 target="_blank"
               >
                 <ListItemElement externalLink title="The Small Budget" />
-              </a>
+              </a> */}
               <a
                 href="https://go.flexshares.com/learn-esg"
                 rel="nofollow noopener noreferrer"
@@ -140,13 +154,13 @@ class Portfolio extends React.Component {
               >
                 <ListItemElement externalLink title="Flexshares | ESG Content Hub" />
               </a>
-              <a
+              {/* <a
                 href="https://ghostproductions.com/"
                 rel="nofollow noopener noreferrer"
                 target="_blank"
               >
                 <ListItemElement externalLink title="Ghost Productions" />
-              </a>
+              </a> */}
               
               <a
                 href="https://www.oneims.com/"
@@ -169,13 +183,13 @@ class Portfolio extends React.Component {
               >
                 <ListItemElement externalLink title="Rfxcel" />
               </a>
-              <a
+              {/* <a
                 href="http://learn.campus.com/"
                 rel="nofollow noopener noreferrer"
                 target="_blank"
               >
                 <ListItemElement externalLink title="Learn With Campus" />
-              </a>
+              </a> */}
               <a
                 href="https://apacks.com/"
                 rel="nofollow noopener noreferrer"
@@ -190,34 +204,20 @@ class Portfolio extends React.Component {
               >
                 <ListItemElement externalLink title="BBT Law" />
               </a>
-              <a
-                href="https://epaysystems.com/"
-                rel="nofollow noopener noreferrer"
-                target="_blank"
-              >
-                <ListItemElement externalLink title="EPAY Systems" />
-              </a>
-              <a
+              {/* <a
                 href="https://gildasuites.com/"
                 rel="nofollow noopener noreferrer"
                 target="_blank"
               >
                 <ListItemElement externalLink title="Gilda Suites" />
-              </a>
-              <a
-                href="https://mosibello.com/"
-                rel="nofollow noopener noreferrer"
-                target="_blank"
-              >
-                <ListItemElement externalLink title="Mosibello" />
-              </a>
-              <a
+              </a> */}
+              {/* <a
                 href="https://mossami.netlify.app/"
                 rel="nofollow noopener noreferrer"
                 target="_blank"
               >
                 <ListItemElement externalLink title="Mossami" />
-              </a>
+              </a> */}
               <a
                 href="https://www.amper.xyz/"
                 rel="nofollow noopener noreferrer"
@@ -238,6 +238,34 @@ class Portfolio extends React.Component {
                 target="_blank"
               >
                 <ListItemElement externalLink title="Bed Bug Lawyer" />
+              </a>
+              <a
+                href="https://the1888hotel.com/"
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+              >
+                <ListItemElement externalLink title="The 1888 Hotel" />
+              </a>
+              <a
+                href="https://flowintoyogallc.com/"
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+              >
+                <ListItemElement externalLink title="Flow Into Yoga LLC" />
+              </a>
+              <a
+                href="https://fox-pen.com/"
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+              >
+                <ListItemElement externalLink title="Fox Pen" />
+              </a>
+              <a
+                href="https://mosibello.vercel.app/"
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+              >
+                <ListItemElement externalLink title="Mosibello" />
               </a>
               <a
                 href="https://tmsnm.com/"
