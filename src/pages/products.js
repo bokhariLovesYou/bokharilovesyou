@@ -57,7 +57,7 @@ class Products extends React.Component {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <ListItemElement externalLink title="Design Hub (public sandbox) -- a Drag and Drop page builder to create prototypes" />
+                <ListItemElement externalLink title="Design Hub (public sandbox) -- a drag and drop page builder to create prototypes (inspired by HubSpot)" />
               </a>
               {/* <a
                 href="https://siteplanner.netlify.app/"
@@ -71,7 +71,7 @@ class Products extends React.Component {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <ListItemElement externalLink title="Focus With Bruno" />
+                <ListItemElement externalLink title="Focus With Bruno -- a simple task management application" />
               </a>
             <a
                 href="https://roicalculator.ai/"
