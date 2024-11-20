@@ -9,6 +9,9 @@ export const GlobalHeader = styled.header`
   @media (min-width: 992px) {
     position: static;
   }
+  @media (max-width: 992px) {
+    z-index: 1;
+  }
 `
 export const FlexWrapper = styled.div`
   display: flex;
