@@ -286,93 +286,95 @@ class Portfolio extends React.Component {
                 </ListLoop>
               </div>
               <div className="col-lg-6 mt-3 pt-3 mt-lg-0 pt-lg-0">
-                <h3 class="h6 mb-3 pt-lg-2">HubSpot Marketplace Themes</h3>
-                <ListLoop>
-                  <a
-                    href="https://ecosystem.hubspot.com/marketplace/website/counselor-theme-by-oneims-com"
-                    rel="nofollow noopener noreferrer"
-                    target="_blank"
-                  >
-                    <ListItemElement externalLink title="Counselor" />
-                  </a>  
-                  <a
-                    href="https://ecosystem.hubspot.com/marketplace/website/consultant-theme-by-oneims-com"
-                    rel="nofollow noopener noreferrer"
-                    target="_blank"
-                  >
-                    <ListItemElement externalLink title="Consultant" />
-                  </a>
-                  <a
-                    href="https://ecosystem.hubspot.com/marketplace/website/legal-law-theme-by-oneims-com"
-                    rel="nofollow noopener noreferrer"
-                    target="_blank"
-                  >
-                    <ListItemElement externalLink title="Law" />
-                  </a>
-                  <a
-                    href="https://ecosystem.hubspot.com/marketplace/website/fintech-theme-by-oneims"
-                    rel="nofollow noopener noreferrer"
-                    target="_blank"
-                  >
-                    <ListItemElement externalLink title="Fintech" />
-                  </a>
-                  <a
-                    href="https://ecosystem.hubspot.com/marketplace/website/healthcare-theme-by-oneims-com"
-                    rel="nofollow noopener noreferrer"
-                    target="_blank"
-                  >
-                    <ListItemElement externalLink title="Healthcare" />
-                  </a>
-                  <a
-                    href="https://ecosystem.hubspot.com/marketplace/website/tech-solutions-theme-by-oneims"
-                    rel="nofollow noopener noreferrer"
-                    target="_blank"
-                  >
-                    <ListItemElement externalLink title="Tech" />
-                  </a>
-                  <a
-                    href="https://ecosystem.hubspot.com/marketplace/website/logistics-theme-by-oneims-com"
-                    rel="nofollow noopener noreferrer"
-                    target="_blank"
-                  >
-                    <ListItemElement externalLink title="Logistics" />
-                  </a>
-                  <a
-                    href="https://ecosystem.hubspot.com/marketplace/website/nonprofit-theme-by-oneims"
-                    rel="nofollow noopener noreferrer"
-                    target="_blank"
-                  >
-                    <ListItemElement externalLink title="Nonprofit" />
-                  </a>
-                  <a
-                    href="https://ecosystem.hubspot.com/marketplace/website/business-saas-theme-by-oneims"
-                    rel="nofollow noopener noreferrer"
-                    target="_blank"
-                  >
-                    <ListItemElement externalLink title="Business" />
-                  </a>
-                  <a
-                    href="https://ecosystem.hubspot.com/marketplace/website/consultancy-theme-by-oneims"
-                    rel="nofollow noopener noreferrer"
-                    target="_blank"
-                  >
-                    <ListItemElement externalLink title="Consultancy" />
-                  </a>
-                  <a
-                    href="https://ecosystem.hubspot.com/marketplace/website/creative-services-theme-by-oneims"
-                    rel="nofollow noopener noreferrer"
-                    target="_blank"
-                  >
-                    <ListItemElement externalLink title="Creative Services" />
-                  </a>
-                  <a
-                    href="https://ecosystem.hubspot.com/marketplace/website/circles-theme-by-oneims"
-                    rel="nofollow noopener noreferrer"
-                    target="_blank"
-                  >
-                    <ListItemElement externalLink title="Circles" />
-                  </a>
-                </ListLoop>
+                <div className="ps-lg-4">
+                  <h3 class="h6 mb-3 pt-lg-2">HubSpot Marketplace Themes</h3>
+                  <ListLoop>
+                    <a
+                      href="https://ecosystem.hubspot.com/marketplace/website/counselor-theme-by-oneims-com"
+                      rel="nofollow noopener noreferrer"
+                      target="_blank"
+                    >
+                      <ListItemElement externalLink title="Counselor" />
+                    </a>  
+                    <a
+                      href="https://ecosystem.hubspot.com/marketplace/website/consultant-theme-by-oneims-com"
+                      rel="nofollow noopener noreferrer"
+                      target="_blank"
+                    >
+                      <ListItemElement externalLink title="Consultant" />
+                    </a>
+                    <a
+                      href="https://ecosystem.hubspot.com/marketplace/website/legal-law-theme-by-oneims-com"
+                      rel="nofollow noopener noreferrer"
+                      target="_blank"
+                    >
+                      <ListItemElement externalLink title="Law" />
+                    </a>
+                    <a
+                      href="https://ecosystem.hubspot.com/marketplace/website/fintech-theme-by-oneims"
+                      rel="nofollow noopener noreferrer"
+                      target="_blank"
+                    >
+                      <ListItemElement externalLink title="Fintech" />
+                    </a>
+                    <a
+                      href="https://ecosystem.hubspot.com/marketplace/website/healthcare-theme-by-oneims-com"
+                      rel="nofollow noopener noreferrer"
+                      target="_blank"
+                    >
+                      <ListItemElement externalLink title="Healthcare" />
+                    </a>
+                    <a
+                      href="https://ecosystem.hubspot.com/marketplace/website/tech-solutions-theme-by-oneims"
+                      rel="nofollow noopener noreferrer"
+                      target="_blank"
+                    >
+                      <ListItemElement externalLink title="Tech" />
+                    </a>
+                    <a
+                      href="https://ecosystem.hubspot.com/marketplace/website/logistics-theme-by-oneims-com"
+                      rel="nofollow noopener noreferrer"
+                      target="_blank"
+                    >
+                      <ListItemElement externalLink title="Logistics" />
+                    </a>
+                    <a
+                      href="https://ecosystem.hubspot.com/marketplace/website/nonprofit-theme-by-oneims"
+                      rel="nofollow noopener noreferrer"
+                      target="_blank"
+                    >
+                      <ListItemElement externalLink title="Nonprofit" />
+                    </a>
+                    <a
+                      href="https://ecosystem.hubspot.com/marketplace/website/business-saas-theme-by-oneims"
+                      rel="nofollow noopener noreferrer"
+                      target="_blank"
+                    >
+                      <ListItemElement externalLink title="Business" />
+                    </a>
+                    <a
+                      href="https://ecosystem.hubspot.com/marketplace/website/consultancy-theme-by-oneims"
+                      rel="nofollow noopener noreferrer"
+                      target="_blank"
+                    >
+                      <ListItemElement externalLink title="Consultancy" />
+                    </a>
+                    <a
+                      href="https://ecosystem.hubspot.com/marketplace/website/creative-services-theme-by-oneims"
+                      rel="nofollow noopener noreferrer"
+                      target="_blank"
+                    >
+                      <ListItemElement externalLink title="Creative Services" />
+                    </a>
+                    <a
+                      href="https://ecosystem.hubspot.com/marketplace/website/circles-theme-by-oneims"
+                      rel="nofollow noopener noreferrer"
+                      target="_blank"
+                    >
+                      <ListItemElement externalLink title="Circles" />
+                    </a>
+                  </ListLoop>
+                </div>
               </div>
             </div>
           </ArticleLoopWrapper>
