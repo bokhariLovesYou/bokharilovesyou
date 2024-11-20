@@ -311,6 +311,13 @@ class Portfolio extends React.Component {
                       <ListItemElement externalLink title="Law" />
                     </a>
                     <a
+                      href="https://ecosystem.hubspot.com/marketplace/website/logistics-theme-by-oneims-com"
+                      rel="nofollow noopener noreferrer"
+                      target="_blank"
+                    >
+                      <ListItemElement externalLink title="Logistics" />
+                    </a>
+                    <a
                       href="https://ecosystem.hubspot.com/marketplace/website/fintech-theme-by-oneims"
                       rel="nofollow noopener noreferrer"
                       target="_blank"
@@ -330,13 +337,6 @@ class Portfolio extends React.Component {
                       target="_blank"
                     >
                       <ListItemElement externalLink title="Tech" />
-                    </a>
-                    <a
-                      href="https://ecosystem.hubspot.com/marketplace/website/logistics-theme-by-oneims-com"
-                      rel="nofollow noopener noreferrer"
-                      target="_blank"
-                    >
-                      <ListItemElement externalLink title="Logistics" />
                     </a>
                     <a
                       href="https://ecosystem.hubspot.com/marketplace/website/nonprofit-theme-by-oneims"
