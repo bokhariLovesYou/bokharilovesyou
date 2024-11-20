@@ -286,7 +286,7 @@ class Portfolio extends React.Component {
                 </ListLoop>
               </div>
               <div className="col-lg-6 mt-3 pt-3 mt-lg-0 pt-lg-0">
-                <div className="ps-lg-4">
+                <div className="pl-lg-4">
                   <h3 class="h6 mb-3 pt-lg-2">HubSpot Marketplace Themes</h3>
                   <ListLoop>
                     <a
