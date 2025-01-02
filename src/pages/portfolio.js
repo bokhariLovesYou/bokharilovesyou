@@ -35,10 +35,10 @@ class Portfolio extends React.Component {
             </span>
           </h1>
           <p>
-            This is what I've been doing 9-5 (or 10 to 6, whatever). The list
-            consists of the items I've created within the current organization I
-            work at.
+            This is what I've been doing 9-5. The list
+            consists of items I've created within the past few years.
           </p>
+          <p>Data is managed by clients themselves through a CMS, therefore some look a little wacky as compared to when they were delivered.</p>
           <p>
             Some are good, some could be better - but we learn by doing.{" "}
             <span className="emoji" role="img" aria-label="dance">
@@ -87,13 +87,6 @@ class Portfolio extends React.Component {
                     <ListItemElement externalLink title="Lola Valentina" />
                   </a>
                   <a
-                    href="https://www.pravadaprivatelabel.com/"
-                    rel="nofollow noopener noreferrer"
-                    target="_blank"
-                  >
-                    <ListItemElement externalLink title="Pravada Private Label" />
-                  </a>
-                  <a
                     href="https://www.weve.co/"
                     rel="nofollow noopener noreferrer"
                     target="_blank"
@@ -127,6 +120,27 @@ class Portfolio extends React.Component {
                     target="_blank"
                   >
                     <ListItemElement externalLink title="360 Co Pack" />
+                  </a>
+                  <a
+                    href="https://www.armedicamfg.com/"
+                    rel="nofollow noopener noreferrer"
+                    target="_blank"
+                  >
+                    <ListItemElement externalLink title="Armedica" />
+                  </a>
+                  <a
+                    href="https://www.teamedgeathletics.com/"
+                    rel="nofollow noopener noreferrer"
+                    target="_blank"
+                  >
+                    <ListItemElement externalLink title="The Athletic Edge" />
+                  </a>
+                  <a
+                    href="https://www.pravadaprivatelabel.com/"
+                    rel="nofollow noopener noreferrer"
+                    target="_blank"
+                  >
+                    <ListItemElement externalLink title="Pravada Private Label" />
                   </a>
                   <a
                     href="https://epaysystems.com/"
