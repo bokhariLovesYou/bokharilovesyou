@@ -45,6 +45,7 @@ class Contact extends React.Component {
               ❤️
             </span>
           </p>
+          <p>You can also find me on <Anchor href="https://www.linkedin.com/in/parasbokhari/" target="_blank">LinkedIn</Anchor> and <Anchor href="https://github.com/bokhariLovesYou" target="_blank">Github</Anchor>!</p>
         </PagesWrapper>
       </PageWrapperLayout>
     )
