@@ -109,7 +109,7 @@ class Products extends React.Component {
                 <ListItemElement externalLink title="Secrets With Bruno" />
               </a> */}
               <a
-                href="https://designwithbruno.com/"
+                href="https://designwithbruno.netlify.app/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
