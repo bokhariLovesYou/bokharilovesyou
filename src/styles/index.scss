@@ -113,6 +113,11 @@ h6,
   color: rgba(55, 53, 47, 0.4);
   flex-shrink: 0;
   backface-visibility: hidden;
+  &--utils {
+    fill: none;
+    stroke-width: 2px;
+    width: 16px;
+  }
 }
 
 .gatsby-highlight-code-line {
