@@ -59,6 +59,20 @@ class Products extends React.Component {
               >
                 <ListItemElement externalLink title="Design Hub (public sandbox) -- a drag and drop page builder to create prototypes (inspired by HubSpot)" />
               </a>
+              <a
+                href="https://utils.bokharilovesyou.com/json-formatter"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ListItemElement externalLink title="JSON Formatter" />
+              </a>
+              <a
+                href="https://utils.bokharilovesyou.com/query-params-to-json"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ListItemElement externalLink title="Query Params to JSON" />
+              </a>
               {/* <a
                 href="https://siteplanner.netlify.app/"
                 target="_blank"
