@@ -80,6 +80,20 @@ class Portfolio extends React.Component {
                     <ListItemElement externalLink title="The Shade Room" />
                   </a>
                   <a
+                    href="https://www.360copack.com/"
+                    rel="nofollow noopener noreferrer"
+                    target="_blank"
+                  >
+                    <ListItemElement externalLink title="360 Co Pack" />
+                  </a>
+                  <a
+                    href="https://jdconsulting.io/"
+                    rel="nofollow noopener noreferrer"
+                    target="_blank"
+                  >
+                    <ListItemElement externalLink title="JD Consulting" />
+                  </a>
+                  <a
                     href="https://www.lolavalentina.com/"
                     rel="nofollow noopener noreferrer"
                     target="_blank"
@@ -113,13 +127,6 @@ class Portfolio extends React.Component {
                     target="_blank"
                   >
                     <ListItemElement externalLink title="Vasilatos Law" />
-                  </a>
-                  <a
-                    href="https://www.360copack.com/"
-                    rel="nofollow noopener noreferrer"
-                    target="_blank"
-                  >
-                    <ListItemElement externalLink title="360 Co Pack" />
                   </a>
                   <a
                     href="https://www.armedicamfg.com/"
